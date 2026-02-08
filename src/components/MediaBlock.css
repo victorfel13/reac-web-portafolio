@@ -34,3 +34,70 @@
   font-size: 80px;
   margin-top: 0px;
 }
+
+/* ======================
+   MÓVIL: hasta 480px
+   ====================== */
+@media (max-width: 480px) {
+  .media-block {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding: 20px 10px;
+    min-height: auto; /* ajusta automáticamente la altura */
+  }
+
+  .media-block.reverse {
+    flex-direction: column; /* siempre columna en móvil */
+  }
+
+  .media-block__img {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .media-block__content {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .media-block__title {
+    font-size: 32px;
+  }
+}
+
+/* ======================
+   TABLET: 481px a 768px
+   ====================== */
+@media (min-width: 481px) and (max-width: 768px) {
+  .media-block {
+    flex-direction: row;
+    gap: 30px;
+    width: 90%;
+    margin-top: 60px;
+    margin-bottom: -60px;
+    padding: 30px 15px;
+    min-height: 400px;
+  }
+
+  .media-block.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .media-block__img {
+    max-width: 250px;
+    margin-left: 40px;
+  }
+
+  .media-block__content {
+    max-width: 400px;
+    margin-top: 0;
+  }
+
+  .media-block__title {
+    font-size: 50px;
+  }
+}

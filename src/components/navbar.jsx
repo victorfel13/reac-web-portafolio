@@ -1,10 +1,12 @@
+import React from "react";
 import "./Navbar.css";
+import logo from "../img/Recurso 1.png"; // 🔑 Importa la imagen desde src
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="head">
-        <img className="head__logo" src="src/img/Recurso 1.png" alt="logo" />
+        <img className="head__logo" src={logo} alt="Logo" />
       </div>
       <ul className="menu">
         <li>

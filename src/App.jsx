@@ -6,7 +6,7 @@ import MediaBlock from "./components/MediaBlock";
 import PhotoGrid from "./components/PhotoGrid";
 import Footer from "./components/Footer";
 import FadeInSection from "./components/FadeInSection";
-
+import audioAluminio from "./audio/Aluminiostreamok.m4a";
 import "./app.css";
 
 import img1 from "./img/27.jpg";
@@ -30,17 +30,17 @@ function App() {
 
       <FadeInSection>
         <Premiere
-          cover={cover}
-          title="Aluminio"
-          text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit... Lorem ipsum dolor sit amet..."
-          audio={{
-            title: "Aluminio",
-            artist: "Grecko 96",
-            audioSrc: "/audio/Aluminiostreamok.m4a",
-            externalLink:
-              "https://open.spotify.com/intl-es/track/7L1DvBl1ShzXQhKz1mQiaZ?si=7119eba5c21247be",
-          }}
-        />
+  cover={cover}
+  title="Aluminio"
+  text="Lorem ipsum dolor sit amet..."
+  audio={{
+    title: "Aluminio",
+    artist: "Grecko 96",
+    audioSrc: audioAluminio, // 🔑 usar la importación
+    externalLink:
+      "https://open.spotify.com/intl-es/track/7L1DvBl1ShzXQhKz1mQiaZ?si=7119eba5c21247be",
+  }}
+/>
       </FadeInSection>
 
       <FadeInSection>

@@ -9,3 +9,16 @@
   opacity: 1;
   transform: translateY(0);
 }
+/* MÓVIL: reducir la distancia para que no se vea exagerado */
+@media (max-width: 480px) {
+  .fade-in-section {
+    transform: translateY(15px);
+  }
+}
+
+/* TABLET: distancia intermedia */
+@media (min-width: 481px) and (max-width: 768px) {
+  .fade-in-section {
+    transform: translateY(20px);
+  }
+}

@@ -13,3 +13,21 @@
   border: 0;
   
 }
+
+/* MÓVIL: hasta 480px */
+@media (max-width: 480px) {
+  .videoclip-wrapper {
+    max-width: 100%;      /* ocupa todo el ancho de la pantalla */
+    margin: 20px auto;    /* margen superior/inferior más cómodo */
+    aspect-ratio: 16 / 9; /* mantiene proporción */
+  }
+}
+
+/* TABLET: 481px a 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .videoclip-wrapper {
+    max-width: 90%;       /* un poco más pequeño que en desktop */
+    margin: 30px auto;
+    aspect-ratio: 16 / 9;
+  }
+}

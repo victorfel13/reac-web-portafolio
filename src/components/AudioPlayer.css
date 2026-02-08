@@ -88,3 +88,77 @@
   text-align: right;
   margin-top: 2px;
 }
+
+/* MÓVIL: hasta 480px */
+@media (max-width: 480px) {
+  .audio-player {
+    max-width: 100%;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .audio-player__info {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+  }
+
+  .audio-player__btn {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 6px;
+  }
+
+  .play-icon {
+    border-left: 12px solid #ffaf10;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+  }
+
+  .pause-icon::before,
+  .pause-icon::after {
+    width: 3px;
+    height: 12px;
+  }
+
+  .audio-player__time {
+    width: 50px;
+    font-size: 10px;
+  }
+}
+
+/* TABLET: 481px a 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .audio-player {
+    max-width: 90%;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .audio-player__info {
+    font-size: 13px;
+  }
+
+  .audio-player__btn {
+    width: 26px;
+    height: 26px;
+    margin-bottom: 7px;
+  }
+
+  .play-icon {
+    border-left: 13px solid #ffaf10;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+  }
+
+  .pause-icon::before,
+  .pause-icon::after {
+    width: 3px;
+    height: 14px;
+  }
+
+  .audio-player__time {
+    width: 55px;
+    font-size: 11px;
+  }
+}

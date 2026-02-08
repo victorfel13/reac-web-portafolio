@@ -34,3 +34,59 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ======================
+   MÓVIL: hasta 480px
+   ====================== */
+@media (max-width: 480px) {
+  .premiere {
+    flex-direction: column;   /* apila imagen y texto */
+    gap: 20px;                /* menos espacio entre elementos */
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 10px;          /* evita que toque los bordes */
+  }
+
+  .premiere__img {
+    max-width: 100%;          /* ocupa todo el ancho disponible */
+  }
+
+  .premiere__title {
+    font-size: 28px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .premiere__text {
+    margin-top: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+/* ======================
+   TABLET: 481px a 768px
+   ====================== */
+@media (min-width: 481px) and (max-width: 768px) {
+  .premiere {
+    flex-direction: row;      /* mantiene fila */
+    gap: 25px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 0 20px;
+  }
+
+  .premiere__img {
+    max-width: 250px;         /* más pequeña que desktop */
+  }
+
+  .premiere__title {
+    font-size: 40px;
+    margin-top: -10px;
+  }
+
+  .premiere__text {
+    margin-top: -20px;
+    font-size: 16px;
+  }
+}

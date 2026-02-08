@@ -1,5 +1,6 @@
 import React from "react";
 import "./Intro.css";
+import introImg from "../img/41.png"; // 🔑 Importa la imagen desde src
 
 function Intro() {
   return (
@@ -8,9 +9,8 @@ function Intro() {
       <h2 className="intro__subtitle">y La Amenaza</h2>
       <h3 className="intro__subdos">presentan:</h3>
 
-      {/* contenedor para recortar la imagen */}
       <div className="intro__img-container">
-        <img className="intro__img" src="/41.png" alt="Logo" />
+        <img className="intro__img" src={introImg} alt="Imagen de introducción" />
       </div>
     </section>
   );
