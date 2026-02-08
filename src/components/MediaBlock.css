@@ -1,0 +1,36 @@
+.media-block {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  width: clamp(1800px, 2000px, 100%);
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: -120px;
+  background-color: rgb(0, 0, 0);
+
+  min-height: 500px; /* aquí ajustas la altura mínima */
+  padding: 40px 20px; /* opcional, para dar espacio interno */
+}
+
+.media-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.media-block__img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin-left: 100px;
+}
+
+.media-block__content {
+  max-width: 600px;
+  color: white;
+  margin-top: 1px;
+
+}
+
+.media-block__title{
+  font-size: 80px;
+  margin-top: 0px;
+}

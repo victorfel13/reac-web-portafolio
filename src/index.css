@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+   
+  color: #060606;
+    overflow-x: hidden;
+}
+
+.app {
+
+  display: grid;
+  place-content: center;
+  text-align: center;
+   
+}

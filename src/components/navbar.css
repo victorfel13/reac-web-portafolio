@@ -1,0 +1,41 @@
+.navbar {
+ display: flex;
+  flex-direction: row;            /* normal, logo a la izquierda */
+  justify-content: space-between; /* separa logo y menú */
+  align-items: center;            /* centra verticalmente */
+  margin: 0;
+  padding: 10px 30px;             /* espacio interno */
+  background-color: #000000;      /* fondo completo */
+
+  position: fixed;                /* ⚡ lo fija en la pantalla */
+  top: 0;                         /* pegado arriba */
+  left: 0;                        /* pegado a la izquierda */
+  width: 100%;                     /* ancho completo */
+  z-index: 1000;                  /* siempre encima de todo */
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;          /* elimina los puntos */
+  padding: 0;                /* elimina padding por defecto */
+  margin: 0;                 /* elimina margin por defecto */
+  margin-right: 70px;
+}
+
+.menu li a {
+  color: #ffffff;            /* texto blanco */
+  text-decoration: none;     /* elimina subrayado */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #f0f0f0;            /* cambio de color al pasar el mouse */
+}
+
+/* el logo no se toca, sigue a la izquierda */
+.head__logo {
+  width: 60px;
+  margin: 0; /* conserva la posición original */
+}

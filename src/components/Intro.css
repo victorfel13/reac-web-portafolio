@@ -1,0 +1,59 @@
+/* Intro.css */
+.intro {
+  min-height: 100vh;           /* altura mínima = 100% de la ventana */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: beige;
+  position: relative;           /* importante para la imagen flotante */
+}
+
+/* efecto tipo revista: bloque detrás del título */
+.intro__title {
+  font-size: 170px;
+  margin-left: 100px;
+  margin-top: -40px;
+  color: rgb(255, 199, 44);                           /* texto blanco */
+  position: relative;
+  display: inline-block;                  /* para que el background solo abarque el texto */
+  padding: 20px 40px;                     /* espacio alrededor del texto */
+ /* background-color: rgb(255, 193, 36);     bloque amarillo detrás */
+}
+
+/* subtítulo con bloque azul detrás */
+.intro__subtitle {
+  font-size: 90px;
+  margin-top: -130px;
+  margin-left: 130px;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  padding: 10px 20px;
+  
+}
+
+/* línea “presentan:” normal o con efecto más sutil */
+.intro__subdos {
+  margin-left: 130px;
+  margin-top: -50px;
+  font-size: 40px;
+  color: rgb(60, 60, 60);
+}
+
+/* contenedor para recortar la imagen */
+.intro__img-container {
+  position: absolute; /* para que quede flotando */
+  top: 0;
+  right: 10px;
+  width: 600px;      /* ancho de la imagen */
+  height: 750px;     /* altura visible de la imagen */
+  overflow: hidden;  /* recorta lo que sobresale */
+}
+
+/* imagen dentro del contenedor */
+.intro__img {
+  width: 100%;
+  position: relative; 
+  top: -10px;        /* ajusta para mostrar la parte deseada */
+}

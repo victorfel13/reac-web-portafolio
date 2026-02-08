@@ -1,0 +1,36 @@
+.premiere{
+  width: clamp(200px, 80vw, 1200px);
+   margin: 0 auto;              /* 👈 centra el bloque */
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 40px;
+   margin-top: 110px;
+   margin-bottom: 110px;
+   
+}
+.premiere__img{
+    max-width: 400px;
+}
+.premiere__title{
+    font-size: 60px;
+    margin-top: -15px;
+}
+
+.premiere__text{
+    margin-top: -40px;
+}
+
+/* Estado inicial: invisible y desplazado */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Estado visible: aparece */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,72 @@
+.photogrid__subtitle {
+   font-size: 80px;
+  text-align: center;
+  margin: 0 0 3rem 0;    /* margen abajo de 3rem, arriba 0 */
+  padding-top: 2rem;     /* separa del techo del contenedor */
+}
+
+.photo-grid__container{
+ background-color: rgb(255, 232, 127);
+  width: 100%;           /* ocupa todo el ancho de la ventana */
+  min-height: 120vh;     /* altura mínima = altura de la ventana */
+  padding: 4rem 2rem 2rem; /* espacio interno: top, horizontal, bottom */
+  box-sizing: border-box;  /* para que padding no afecte ancho total */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+margin-top: 110px; }
+
+/* CONTENEDOR PRINCIPAL */
+.photo-grid {
+   display: flex;
+  gap: 10px;              
+  width: 95%;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  margin: 0; /* ya no hace falta margin-top */
+  padding: 0;
+  
+}
+
+/* cada item */
+.photo-grid__item {
+  flex: 0 0 255px;      /* ancho fijo → obliga al scroll */
+  margin: 0;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+/* imagen */
+.photo-grid__img {
+  width: 100%;
+  display: block;
+  gap: 100px;
+}
+
+/* texto */
+.photo-grid__caption {
+  margin-top: 8px;
+}
+
+.photo-grid__caption h3 {
+  margin: 0;
+  font-size: 16px;
+  
+}
+
+.photo-grid__caption p {
+  margin: 2px 0 0;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* opcional: barra de scroll discreta */
+.photo-grid::-webkit-scrollbar {
+  height: 1px;
+}
+
+.photo-grid::-webkit-scrollbar-thumb {
+  background: rgba(0,0,10,60);
+  border-radius: 7px;
+}
