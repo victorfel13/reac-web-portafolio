@@ -1,5 +1,5 @@
 .navbar {
- display: flex;
+  display: flex;
   flex-direction: row;            /* normal, logo a la izquierda */
   justify-content: space-between; /* separa logo y menú */
   align-items: center;            /* centra verticalmente */
@@ -10,7 +10,7 @@
   position: fixed;                /* ⚡ lo fija en la pantalla */
   top: 0;                         /* pegado arriba */
   left: 0;                        /* pegado a la izquierda */
-  width: 100%;                     /* ancho completo */
+  width: 100%;                    /* ancho completo */
   z-index: 1000;                  /* siempre encima de todo */
 }
 
@@ -40,7 +40,6 @@
   margin: 0; /* conserva la posición original */
 }
 
-
 /* ======================
    MÓVIL: hasta 480px
    ====================== */
@@ -57,10 +56,27 @@
   }
 
   .menu {
-    flex-direction: column;
-    gap: 10px;
-    margin-right: 0;
-    text-align: center;
+    flex-direction: column;        /* apilar links */
+    max-height: 0;                 /* menú oculto */
+    overflow: hidden;              /* oculta los links */
+    transition: max-height 0.3s ease;
+    background-color: #000;
+    position: absolute;
+    top: 60px;                     /* debajo de la navbar */
+    right: 10px;
+    padding: 0 20px;
+    border-radius: 8px;
+    width: 150px;
+    z-index: 1000;
+  }
+
+  /* Estado desplegado: agregar clase 'active' desde React */
+  .menu.active {
+    max-height: 500px;             /* suficiente para todos los links */
+  }
+
+  .menu li {
+    margin: 10px 0;
   }
 
   .menu li a {
@@ -82,9 +98,29 @@
     width: 55px;
   }
 
+  /* Menú tablet: ahora colapsable como en móvil */
   .menu {
-    gap: 15px;
-    margin-right: 30px;
+    flex-direction: column;        /* apilar links */
+    max-height: 0;                 /* oculto por defecto */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 0 20px;
+    border-radius: 8px;
+    width: 200px;
+    z-index: 1000;
+    gap: 10px;
+  }
+
+  .menu.active {
+    max-height: 500px;             /* desplegado */
+  }
+
+  .menu li {
+    margin: 10px 0;
   }
 
   .menu li a {

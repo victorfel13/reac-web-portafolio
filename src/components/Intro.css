@@ -15,11 +15,10 @@
   font-size: 170px;
   margin-left: 100px;
   margin-top: -40px;
-  color: rgb(36, 180, 144);                           /* texto blanco */
+  color: rgb(255, 199, 44);
   position: relative;
-  display: inline-block;                  /* para que el background solo abarque el texto */
-  padding: 20px 40px;                     /* espacio alrededor del texto */
- /* background-color: rgb(255, 193, 36);     bloque amarillo detrás */
+  display: inline-block;
+  padding: 20px 40px;
 }
 
 /* subtítulo con bloque azul detrás */
@@ -30,7 +29,6 @@
   color: rgb(0, 0, 0);
   display: inline-block;
   padding: 10px 20px;
-  
 }
 
 /* línea “presentan:” normal o con efecto más sutil */
@@ -46,18 +44,17 @@
   position: absolute; /* para que quede flotando */
   top: 0;
   right: 10px;
-  width: 600px;      /* ancho de la imagen */
-  height: 750px;     /* altura visible de la imagen */
-  overflow: hidden;  /* recorta lo que sobresale */
+  width: 600px;
+  height: 750px;
+  overflow: hidden;
 }
 
 /* imagen dentro del contenedor */
 .intro__img {
   width: 100%;
-  position: relative; 
-  top: -10px;        /* ajusta para mostrar la parte deseada */
+  position: relative;
+  top: -10px;
 }
-
 
 /* ======================
    MÓVIL: hasta 480px
@@ -65,79 +62,102 @@
 @media (max-width: 480px) {
   .intro {
     padding: 1rem;
-    align-items: center; /* centrar contenido en móviles */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    height: 600px; /* ajusta según necesites */
   }
 
   .intro__title {
-    font-size: 60px;
-    margin-left: 0;
-    margin-top: 0;
+     font-size: 60px;
+    margin: 0;
     padding: 10px 20px;
     text-align: center;
+    order: 1;
+    margin-top: 50px;
   }
 
   .intro__subtitle {
-    font-size: 30px;
-    margin-top: 0;
-    margin-left: 0;
+     font-size: 30px;
+    margin: 0;
     padding: 5px 10px;
     text-align: center;
+    order: 2;
+    margin-top: -10px;
   }
 
   .intro__subdos {
     font-size: 18px;
-    margin-left: 0;
-    margin-top: 10px;
+    margin: 0;
     text-align: center;
+    order: 3;
   }
 
   .intro__img-container {
-    width: 200px;
-    height: 250px;
-    top: 100px;
-    right: 10px;
+     width: 400px;
+    height: auto;            /* altura automática según imagen */
+    margin-top: 20px;
+    position: relative;
+    display: flex;           /* flex para alinear la imagen al final */
+    justify-content: center; /* centrar horizontalmente */
+    align-items: flex-end;   /* la base toca la base del contenedor */
+    order: 4;
+    margin-bottom: -10px;
   }
 
   .intro__img {
-  width: 100%;
-  position: relative; 
-  top: -60px;        /* ajusta para mostrar la parte deseada */
+   width: 100%;
+    height: auto;
+    top: 140px; /* eliminar top negativo */
+  }
 }
-}
-
 /* ======================
    TABLET: 481px a 768px
    ====================== */
 @media (min-width: 481px) and (max-width: 768px) {
   .intro {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    height: auto;
   }
 
   .intro__title {
     font-size: 100px;
-    margin-left: 20px;
-    margin-top: -20px;
+    margin: 0 0 10px 20px;
     padding: 15px 30px;
+    order: 1;
   }
 
   .intro__subtitle {
     font-size: 50px;
-    margin-top: -50px;
-    margin-left: 30px;
+    margin: 0 0 10px 30px;
     padding: 8px 15px;
+    order: 2;
   }
 
   .intro__subdos {
     font-size: 24px;
-    margin-left: 30px;
-    margin-top: -20px;
+    margin: 0 0 10px 30px;
+    order: 3;
   }
 
   .intro__img-container {
     width: 300px;
-    height: 375px;
-    top: 10px;
-    right: 20px;
+    height: auto;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* base de la imagen toca la base */
+    order: 4;
+  }
+
+  .intro__img {
+    width: 100%;
+    height: auto;
+    top: 0;
   }
 }

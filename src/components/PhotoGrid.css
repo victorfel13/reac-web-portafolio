@@ -84,7 +84,7 @@ margin-top: 110px; }
   .photo-grid__container {
     padding: 2rem 1rem 1rem;
     min-height: auto;
-    margin-top: 80px;
+    margin-top: 0px;
   }
 
   .photo-grid {
@@ -93,7 +93,7 @@ margin-top: 110px; }
   }
 
   .photo-grid__item {
-    flex: 0 0 150px;  /* ancho más pequeño para móvil */
+    flex: 0 0 350px;  /* ancho más pequeño para móvil */
     padding: 5px;
     margin-top: 0;
   }
