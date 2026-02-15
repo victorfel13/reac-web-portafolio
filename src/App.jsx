@@ -67,6 +67,7 @@ En “Aluminio”, ese interés por lo cotidiano se vuelve explícito: la canci�
       <FadeInSection>
         <PhotoGrid
           photos={[
+            
             {
               src: img7,
               title: "Alex Cstilla (Ing de grabación y mentor del proyecto)",
@@ -78,12 +79,18 @@ En “Aluminio”, ese interés por lo cotidiano se vuelve explícito: la canci�
               role: "",
             },
 
-
-            {
-              src: img2,
-              title: "Daniel (Voz y letras)",
+             {
+              src: img5,
+              title: "Jhonatan (Bajo)",
               role: "",
             },
+            {
+              src: img6,
+              title: "Carlos (Batería)",
+              role: "",
+            },
+
+
             {
               src: img3,
               title: "Rino (Guitarra y producción)",
@@ -94,16 +101,13 @@ En “Aluminio”, ese interés por lo cotidiano se vuelve explícito: la canci�
               title: "Víctor (Sintetizadores y producción)",
               role: "",
             },
+
             {
-              src: img5,
-              title: "Jhonatan (Bajo)",
+              src: img2,
+              title: "Daniel (Voz y letras)",
               role: "",
             },
-            {
-              src: img6,
-              title: "Carlos (Batería)",
-              role: "",
-            },
+           
             
           ]}
         />
