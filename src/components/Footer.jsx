@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { FaInstagram, FaYoutube, FaSpotify } from "react-icons/fa";
+import minilogo from "../img/Minilogo.png";
 
 function Footer() {
   return (
@@ -37,7 +38,9 @@ function Footer() {
           </a>
         </nav>
 
-        <p className="footer__credit">Sitio hecho por MiniDesk Dv</p>
+        
+        <p className="footer__credit">Sitio hecho por Mini Desk</p>
+        <img className="footer__logo" src={minilogo} alt="logominidesk" />
 
       </div>
     </footer>

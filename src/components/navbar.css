@@ -134,7 +134,7 @@
    ====================== */
 @media (min-width: 1600px) {
   .navbar {
-    padding: 20px 80px;      /* más espacio lateral y vertical */
+    padding: 20px 25px;      /* más espacio lateral y vertical */
   }
 
   .head__logo {

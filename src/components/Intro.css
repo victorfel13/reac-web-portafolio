@@ -47,6 +47,7 @@
   width: 600px;
   height: 750px;
   overflow: hidden;
+  z-index: 0; /* imagen por defecto detrás */
 }
 
 /* imagen dentro del contenedor */
@@ -105,6 +106,7 @@
     align-items: flex-end;   /* la base toca la base del contenedor */
     order: 4;
     margin-bottom: -10px;
+    z-index: 0;
   }
 
   .intro__img {
@@ -113,6 +115,7 @@
     top: 30px; /* eliminar top negativo */
   }
 }
+
 /* ======================
    TABLET: 481px a 768px
    ====================== */
@@ -123,6 +126,15 @@
     flex-direction: column;
     align-items: flex-start;
     height: auto;
+    position: relative; /* referencia para z-index */
+  }
+
+  /* TEXTO ENCIMA DE LA IMAGEN */
+  .intro__title,
+  .intro__subtitle,
+  .intro__subdos {
+    position: relative;
+    z-index: 2; /* por encima de la imagen */
   }
 
   .intro__title {
@@ -149,11 +161,13 @@
     width: 300px;
     height: auto;
     margin-top: 20px;
-    position: relative;
+    position: absolute;  /* para ponerla detrás */
+    top: 0;
+    right: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* base de la imagen toca la base */
-    order: 4;
+    align-items: flex-end;
+    z-index: 1;           /* debajo del texto */
   }
 
   .intro__img {
@@ -176,21 +190,21 @@
   .intro__title {
     font-size: 200px;        /* título más grande */
     margin-left: 120px;
-    margin-top: -20px;
+    margin-top: -240px;
     padding: 30px 50px;
   }
 
   .intro__subtitle {
     font-size: 120px;
     margin-left: 150px;
-    margin-top: -80px;
+    margin-top: -200px;
     padding: 15px 30px;
   }
 
   .intro__subdos {
     font-size: 50px;
-    margin-left: 150px;
-    margin-top: -30px;
+    margin-left: 200px;
+    margin-top: -90px;
   }
 
   .intro__img-container {
@@ -201,10 +215,11 @@
     display: flex;
     justify-content: center;
     align-items: flex-end; /* base de la imagen toca el final */
+    z-index: 0;            /* queda detrás por defecto */
   }
 
   .intro__img {
-    width: 100%;
+    width: 80%;
     height: auto;
     top: 0;
   }

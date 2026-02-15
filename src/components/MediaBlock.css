@@ -124,7 +124,7 @@
     padding: 80px 60px;     /* más padding interno */
     margin-top: 100px;
     margin-bottom: -80px;
-    min-height: 600px;      /* aumenta altura mínima */
+    min-height: 10px;      /* aumenta altura mínima */
   }
 
   .media-block.reverse {
@@ -142,11 +142,11 @@
   }
 
   .media-block__title {
-    font-size: 100px;       /* título más grande */
+    font-size: 80px;       /* título más grande */
   }
 
   .media-block__text {
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 0px;
     line-height: 1.6;
   }
