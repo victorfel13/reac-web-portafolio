@@ -16,7 +16,7 @@ import img4 from "./img/22.jpg";
 import img5 from "./img/30.jpg";
 import img6 from "./img/42.jpeg";
 import img7 from "./img/44.png";
-import img8 from "./img/3.jpg";
+import img8 from "./img/45.jpg";
 import cover from "./img/36c1851e-f61a-4dde-a384-ae5fd55c33f9_20260205_112608_0000.png";
 
 function App() {
@@ -68,6 +68,18 @@ En “Aluminio”, ese interés por lo cotidiano se vuelve explícito: la canci�
         <PhotoGrid
           photos={[
             {
+              src: img7,
+              title: "Alex Cstilla (Ing de grabación y mentor del proyecto)",
+              role: "",
+            },
+            {
+              src: img8,
+              title: "Mechi (Filmaker)",
+              role: "",
+            },
+
+
+            {
               src: img2,
               title: "Daniel (Voz y letras)",
               role: "",
@@ -92,16 +104,7 @@ En “Aluminio”, ese interés por lo cotidiano se vuelve explícito: la canci�
               title: "Carlos (Batería)",
               role: "",
             },
-            {
-              src: img7,
-              title: "Alex Cstilla (Ing de grabación y mentor del proyecto)",
-              role: "",
-            },
-            {
-              src: img8,
-              title: "Mechi (Filmaker)",
-              role: "",
-            },
+            
           ]}
         />
       </FadeInSection>
