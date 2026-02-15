@@ -16,7 +16,7 @@ function Navbar() {
           <a href="#about">¿Quién soy?</a>
         </li>
         <li>
-          <a href="#music">Música</a>
+          <a href="https://open.spotify.com/intl-es/artist/6xVmXhtcOItqZ4FmxXxoSE?si=48bUj5d6TaeagdsyUiVsFA" target="_blank">Música</a>
         </li>
         <li>
           <a href="#contact">Contacto</a>
