@@ -7,7 +7,7 @@
   padding: 12px;
   border-radius: 8px;
   max-width: 400px;
-  background: #fff; /* opcional */
+  background: #fff;
 }
 
 .audio-player__info {
@@ -34,10 +34,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 8px; /* espacio antes de la timeline */
+  margin-bottom: 8px;
 }
 
-/* Play: triángulo minimalista */
 .play-icon {
   width: 0;
   height: 0;
@@ -47,7 +46,6 @@
   transition: all 0.2s;
 }
 
-/* Pause: dos barras finas */
 .pause-icon {
   display: flex;
   gap: 4px;
@@ -64,7 +62,6 @@
   border-radius: 2px;
 }
 
-/* TIMELINE */
 .audio-player__timeline {
   height: 6px;
   background: #333;
@@ -89,7 +86,9 @@
   margin-top: 2px;
 }
 
-/* MÓVIL: hasta 480px */
+/* ======================
+   MÓVIL: hasta 480px
+   ====================== */
 @media (max-width: 480px) {
   .audio-player {
     max-width: 100%;
@@ -127,7 +126,9 @@
   }
 }
 
-/* TABLET: 481px a 768px */
+/* ======================
+   TABLET: 481px a 768px
+   ====================== */
 @media (min-width: 481px) and (max-width: 768px) {
   .audio-player {
     max-width: 90%;
@@ -160,5 +161,44 @@
   .audio-player__time {
     width: 55px;
     font-size: 11px;
+  }
+}
+
+/* ======================
+   PANTALLAS GRANDES: 1600px en adelante
+   ====================== */
+@media (min-width: 1600px) {
+  .audio-player {
+    max-width: 600px;      /* más ancho en pantallas grandes */
+    padding: 20px;
+    gap: 12px;
+    font-size: 16px;
+  }
+
+  .audio-player__info {
+    font-size: 16px;
+  }
+
+  .audio-player__btn {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 12px;
+  }
+
+  .play-icon {
+    border-left: 18px solid #ffaf10;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+
+  .pause-icon::before,
+  .pause-icon::after {
+    width: 5px;
+    height: 20px;
+  }
+
+  .audio-player__time {
+    width: 80px;
+    font-size: 14px;
   }
 }

@@ -2,14 +2,15 @@
   display: flex;
   gap: 40px;
   align-items: center;
-  width: clamp(1800px, 2000px, 100%);
+  width: 100%;
+  max-width: 2000px;
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: -120px;
   background-color: rgb(0, 0, 0);
 
-  min-height: 500px; /* aquí ajustas la altura mínima */
-  padding: 40px 20px; /* opcional, para dar espacio interno */
+  min-height: 500px;
+  padding: 40px 20px;
 }
 
 .media-block.reverse {
@@ -26,13 +27,58 @@
 .media-block__content {
   max-width: 600px;
   color: white;
-  margin-top: 1px;
-
 }
 
-.media-block__title{
+.media-block__title {
   font-size: 80px;
-  margin-top: 0px;
+  margin-top: 0;
+  line-height: 1;
+}
+
+.media-block__text {
+  margin-top: -50px;
+}
+
+/* ======================
+   TABLET: 481px a 768px
+   ====================== */
+@media (max-width: 768px) {
+  .media-block {
+    flex-direction: column;
+    margin-bottom: 0;
+    padding: 60px 20px;
+    min-height: auto;
+  }
+
+  .media-block.reverse {
+    flex-direction: column;
+  }
+
+  /* 👇 IMAGEN ARRIBA */
+  .media-block__img {
+    margin-left: 0;
+    max-width: 340px;
+    order: 1;
+    align-self: center;
+  }
+
+  /* 👇 TEXTO ABAJO + MÁS MARGEN */
+  .media-block__content {
+    max-width: 100%;
+    order: 2;
+    text-align: left;
+    padding: 0 40px; /* 👈 más margen izquierda/derecha */
+  }
+
+  .media-block__title {
+    font-size: 48px;
+  }
+
+  .media-block__text {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }
 
 /* ======================
@@ -40,47 +86,45 @@
    ====================== */
 @media (max-width: 480px) {
   .media-block {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 0;
-    padding: 20px 10px;
-    min-height: auto; /* ajusta automáticamente la altura */
+    gap: 24px;
+    padding: 40px 10px;
   }
 
-  .media-block.reverse {
-    flex-direction: column; /* siempre columna en móvil */
-  }
-
+  /* IMAGEN ARRIBA */
   .media-block__img {
-    max-width: 100%;
-    margin-left: 0;
+    max-width: 260px;
+    order: 1;
+    align-self: center;
   }
 
+  /* TEXTO ABAJO + RESPIRACIÓN */
   .media-block__content {
-    max-width: 100%;
-    text-align: center;
-    margin-top: 10px;
+    order: 2;
+    text-align: left;
+    padding: 0 20px; /* 👈 margen cómodo en móvil */
   }
 
   .media-block__title {
     font-size: 32px;
   }
+
+  .media-block__text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
 }
 
+
 /* ======================
-   TABLET: 481px a 768px
+   PANTALLAS GRANDES: 1600px en adelante
    ====================== */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 1600px) {
   .media-block {
-    flex-direction: row;
-    gap: 30px;
-    width: 90%;
-    margin-top: 60px;
-    margin-bottom: -60px;
-    padding: 30px 15px;
-    min-height: 400px;
+    gap: 60px;              /* más espacio entre imagen y texto */
+    padding: 80px 60px;     /* más padding interno */
+    margin-top: 100px;
+    margin-bottom: -80px;
+    min-height: 600px;      /* aumenta altura mínima */
   }
 
   .media-block.reverse {
@@ -88,16 +132,22 @@
   }
 
   .media-block__img {
-    max-width: 250px;
-    margin-left: 40px;
+    max-width: 500px;       /* imagen más grande */
+    margin-left: 120px;
   }
 
   .media-block__content {
-    max-width: 400px;
-    margin-top: 0;
+    max-width: 700px;
+    padding: 0 60px;        /* más margen lateral */
   }
 
   .media-block__title {
-    font-size: 50px;
+    font-size: 100px;       /* título más grande */
+  }
+
+  .media-block__text {
+    font-size: 20px;
+    margin-top: 0px;
+    line-height: 1.6;
   }
 }

@@ -146,3 +146,37 @@ margin-top: 110px; }
     font-size: 13px;
   }
 }
+
+/* ======================
+   PANTALLAS GRANDES: 1600px en adelante
+   ====================== */
+@media (min-width: 1600px) {
+  .photogrid__subtitle {
+    font-size: 100px;       /* más grande para monitor */
+    margin-bottom: 4rem;
+    padding-top: 3rem;
+  }
+
+  .photo-grid__container {
+    padding: 6rem 8rem 4rem; /* más espacio alrededor */
+    min-height: 100vh;
+  }
+
+  .photo-grid {
+    gap: 20px;               /* más espacio entre items */
+    width: 90%;              /* ocupa más ancho */
+  }
+
+  .photo-grid__item {
+    flex: 0 0 300px;         /* items más grandes */
+    padding: 12px;
+  }
+
+  .photo-grid__caption h3 {
+    font-size: 18px;
+  }
+
+  .photo-grid__caption p {
+    font-size: 16px;
+  }
+}

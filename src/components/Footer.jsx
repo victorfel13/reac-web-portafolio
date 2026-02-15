@@ -3,7 +3,7 @@ import { FaInstagram, FaYoutube, FaSpotify } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer id="contact" className="footer">
       <div className="footer__content">
 
         <p className="footer__brand">© 2026 Grecko 96</p>

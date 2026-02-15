@@ -5,7 +5,7 @@ function MediaBlock({ image, title, text, reverse = false }) {
     <section className={`media-block ${reverse ? "reverse" : ""}`}>
       <img className="media-block__img" src={image} alt={title} />
 
-      <div className="media-block__content">
+      <div id="about" className="media-block__content">
         <h2 className="media-block__title">{title}</h2>
         <p className="media-block__text">{text}</p>
       </div>

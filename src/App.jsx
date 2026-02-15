@@ -51,7 +51,16 @@ function App() {
         <MediaBlock
           image={img1}
           title="Cosas en las que nos basamos"
-          text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy..."
+          text="Si hoy tuviéramos que señalar un proyecto que esté empujando el hip hop desde Mérida hacia otro lugar, ese sería Grecko 96.
+
+No por estadísticas, ni por algoritmos, ni por fórmulas probadas.
+Sino por intención.
+
+Junto a su equipo ha construido un sonido que intenta romper con la hegemonía del hip hop tradicional en México, combinando funk, ritmos latinos y decisiones intuitivas: lo que funcione, lo que se sienta honesto, lo que haga falta para romper la inercia. Las letras se apoyan en referencias cinematográficas y en la vida cotidiana de personas comunes. Parte de ese enfoque se traslada también al escenario: hip hop interpretado con banda en vivo.
+
+El proyecto se ha construido de forma colectiva, con la participación de distintos productores y colaboradores. Ese rango creativo se refleja en canciones como “Aluminio”, una cumbia construida a partir de samples que remiten a la calle en México, o “Funk”, una pieza que dialoga directamente con el ADN del hip hop, evocando sus primeros años y su energía rítmica.
+
+En “Aluminio”, ese interés por lo cotidiano se vuelve explícito: la canción incorpora sonidos capturados de la calle, como las voces de personas que recorren la ciudad vendiendo chatarra. Más que un recurso estético, es una forma de anclar la música a lo que sucede alrededor, de hacer que el hip hop suene a lo que se vive todos los días."
         />
       </FadeInSection>
 
@@ -61,37 +70,37 @@ function App() {
             {
               src: img2,
               title: "Daniel (Voz y letras)",
-              role: "Mejor conocido como Grecko 96, Lorem ipsum dolor sit amet...",
+              role: "",
             },
             {
               src: img3,
               title: "Rino (Guitarra y producción)",
-              role: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit...",
+              role: "",
             },
             {
               src: img4,
               title: "Víctor (Sintetizadores y producción)",
-              role: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit...",
+              role: "",
             },
             {
               src: img5,
               title: "Jhonatan (Bajo)",
-              role: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit...",
+              role: "",
             },
             {
               src: img6,
               title: "Carlos (Batería)",
-              role: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit...",
+              role: "",
             },
             {
               src: img7,
               title: "Alex Cstilla (Ing de grabación y mentor del proyecto)",
-              role: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit...",
+              role: "",
             },
             {
               src: img8,
               title: "Mechi (Filmaker)",
-              role: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit...",
+              role: "",
             },
           ]}
         />

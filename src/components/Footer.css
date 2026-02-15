@@ -88,3 +88,24 @@
     font-size: 18px;
   }
 }
+
+/* PANTALLAS GRANDES: 1600px en adelante */
+@media (min-width: 1600px) {
+  .footer__content {
+    max-width: 1600px;       /* aprovecha más ancho */
+    gap: 40px;               /* más espacio entre elementos */
+  }
+
+  .footer__brand {
+    font-size: 16px;         /* ligeramente más grande */
+  }
+
+  .footer__nav a {
+    font-size: 22px;         /* links más visibles */
+    gap: 30px;               /* más separación */
+  }
+
+  .footer {
+    padding: 60px 40px;      /* más espacio general */
+  }
+}

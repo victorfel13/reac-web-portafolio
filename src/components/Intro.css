@@ -66,7 +66,7 @@
     display: flex;
     flex-direction: column;
     min-height: auto;
-    height: 600px; /* ajusta según necesites */
+    height: 700px; /* ajusta según necesites */
   }
 
   .intro__title {
@@ -85,6 +85,7 @@
     text-align: center;
     order: 2;
     margin-top: -10px;
+    
   }
 
   .intro__subdos {
@@ -97,7 +98,7 @@
   .intro__img-container {
      width: 400px;
     height: auto;            /* altura automática según imagen */
-    margin-top: 20px;
+    margin-top: -60px;
     position: relative;
     display: flex;           /* flex para alinear la imagen al final */
     justify-content: center; /* centrar horizontalmente */
@@ -109,7 +110,7 @@
   .intro__img {
    width: 100%;
     height: auto;
-    top: 140px; /* eliminar top negativo */
+    top: 30px; /* eliminar top negativo */
   }
 }
 /* ======================
@@ -153,6 +154,53 @@
     justify-content: center;
     align-items: flex-end; /* base de la imagen toca la base */
     order: 4;
+  }
+
+  .intro__img {
+    width: 100%;
+    height: auto;
+    top: 0;
+  }
+}
+
+/* ======================
+   PANTALLAS GRANDES: 1600px en adelante
+   ====================== */
+@media (min-width: 1600px) {
+  .intro {
+    padding: 3rem 5rem;      /* más espacio interno */
+    min-height: 120vh;       /* ocupa más altura de la pantalla */
+    align-items: flex-start;
+  }
+
+  .intro__title {
+    font-size: 200px;        /* título más grande */
+    margin-left: 120px;
+    margin-top: -20px;
+    padding: 30px 50px;
+  }
+
+  .intro__subtitle {
+    font-size: 120px;
+    margin-left: 150px;
+    margin-top: -80px;
+    padding: 15px 30px;
+  }
+
+  .intro__subdos {
+    font-size: 50px;
+    margin-left: 150px;
+    margin-top: -30px;
+  }
+
+  .intro__img-container {
+    width: 800px;
+    height: 950px;
+    top: 0;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* base de la imagen toca el final */
   }
 
   .intro__img {

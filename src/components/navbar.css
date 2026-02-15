@@ -127,3 +127,31 @@
     font-size: 16px;
   }
 }
+
+
+/* ======================
+   PANTALLAS GRANDES: 1600px en adelante
+   ====================== */
+@media (min-width: 1600px) {
+  .navbar {
+    padding: 20px 80px;      /* más espacio lateral y vertical */
+  }
+
+  .head__logo {
+    width: 80px;             /* logo más grande */
+  }
+
+  .menu {
+    gap: 30px;               /* más espacio entre links */
+    width: auto;             /* no limitar ancho del menú */
+    padding: 0;              /* quitar padding extra */
+    position: relative;      /* menú no flotante */
+    max-height: none;        /* siempre visible en pantallas grandes */
+    flex-direction: row;     /* links en fila */
+    background-color: transparent;
+  }
+
+  .menu li a {
+    font-size: 20px;         /* links más grandes */
+  }
+}

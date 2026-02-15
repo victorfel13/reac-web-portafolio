@@ -90,3 +90,28 @@
     font-size: 16px;
   }
 }
+/* ======================
+   PANTALLAS GRANDES: 1600px en adelante
+   ====================== */
+@media (min-width: 1600px) {
+  .premiere {
+    gap: 60px;              /* más espacio entre imagen y texto */
+    margin-top: 160px;
+    margin-bottom: 160px;
+    padding: 0 100px;       /* margen lateral grande */
+  }
+
+  .premiere__img {
+    max-width: 500px;        /* imagen más grande */
+  }
+
+  .premiere__title {
+    font-size: 80px;         /* título más impactante */
+    margin-top: -10px;
+  }
+
+  .premiere__text {
+    margin-top: -30px;
+    font-size: 20px;         /* texto más grande */
+  }
+}

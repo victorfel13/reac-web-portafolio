@@ -22,3 +22,10 @@
     transform: translateY(20px);
   }
 }
+
+/* PANTALLAS GRANDES: 1600px en adelante */
+@media (min-width: 1600px) {
+  .fade-in-section {
+    transform: translateY(50px); /* más distancia para que la animación sea visible */
+  }
+}
